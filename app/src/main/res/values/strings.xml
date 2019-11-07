@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ARTDECORA</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="Slogan">Decoração ao seu gosto</string>
+    <string name="livro_de_ideias">Livro de ideias</string>
+    <string name="perfil">Perfil</string>
+    <string name="terminar_sess_o">Terminar Sessão</string>
+    <string name="inicio">Inicio</string>
+    <string name="claclo153_gmail_com">claclo153@gmail.com</string>
+    <string name="gdoc_gest_o_de_processos">GDoc - Gestão de processos</string>
+    <string name="cl_udio_garcia">Cláudio Garcia</string>
+    <string name="_60">60</string>
+    <string name="calend_rio">Calendário</string>
+    <string name="processos">Processos</string>
+    <string name="clientes">Clientes</string>
+    <string name="palavra_passe">Palavra-passe</string>
+    <string name="editar_livro_ideias">Editar livro de ideias</string>
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="email">Email</string>
+    <string name="confirmar_palavra_passe">Confirmar Palavra-passe</string>
+    <string name="remover">Remover livro de ideias</string>
+    <string name="nome">nome</string>
+    <string name="titulo">Titulo</string>
+    <string name="username">username</string>
+    <string name="apelido">apelido</string>
+    <string name="logout">Logout</string>
+</resources>

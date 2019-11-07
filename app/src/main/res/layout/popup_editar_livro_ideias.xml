@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@color/backgroundLoadScreen"
+    android:id="@+id/dialog">
+
+    <TextView
+        android:id="@+id/tvClosePopup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar livro de ideias"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="2dp"
+        android:background="@color/white"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        app:boxStrokeColor="@color/white"
+        app:boxBackgroundColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColorHint="@color/white"
+        app:helperTextTextColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:prefixTextColor="@color/white"
+        app:suffixTextColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:counterTextColor="@color/white"
+        app:errorTextColor="@color/white"
+        app:counterOverflowTextColor="@color/white">
+
+        <EditText
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:outlineSpotShadowColor="@color/white"
+            android:outlineAmbientShadowColor="@color/white"
+            android:textColorLink="@color/white"
+            android:textColorHint="@color/white"
+            android:shadowColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:hint="@string/titulo"
+            android:textColor="@color/white"
+            android:minWidth="350dp">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

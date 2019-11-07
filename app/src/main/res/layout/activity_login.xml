@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loginForm"
+    tools:context=".Login">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginBottom="10dp"
+       app:cardCornerRadius="10dp"
+       app:cardElevation="3dp"
+       app:cardPreventCornerOverlap="false"
+       app:cardUseCompatPadding="true">
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <LinearLayout
+             android:id="@+id/linearLayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="100dp"
+             android:layout_marginRight="20dp"
+             android:background="@color/backgroundLoadScreen"
+             android:gravity="center_horizontal"
+             android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logotipo" />
+
+         </LinearLayout>
+
+         <RelativeLayout
+             android:id="@+id/relativeLayout"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/linearLayout"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="-10dp"
+             android:rotation="45">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:src="@drawable/square" />
+         </RelativeLayout>
+
+
+         <LinearLayout
+          android:id="@+id/relativeLayout1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/relativeLayout"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginRight="20dp">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                app:boxStrokeColor="@color/backgroundLoadScreen"
+                app:boxBackgroundColor="@color/backgroundLoadScreen"
+                android:outlineAmbientShadowColor="@color/backgroundLoadScreen"
+                android:outlineSpotShadowColor="@color/backgroundLoadScreen"
+                android:textColorHint="@color/backgroundLoadScreen"
+                app:helperTextTextColor="@color/backgroundLoadScreen"
+                app:hintTextColor="@color/backgroundLoadScreen"
+                app:counterTextColor="@color/backgroundLoadScreen"
+                app:errorTextColor="@color/backgroundLoadScreen"
+                app:counterOverflowTextColor="@color/backgroundLoadScreen">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:outlineSpotShadowColor="@color/backgroundLoadScreen"
+                    android:outlineAmbientShadowColor="@color/backgroundLoadScreen"
+                    android:textColorLink="@color/backgroundLoadScreen"
+                    android:textColorHint="@color/backgroundLoadScreen"
+                    android:shadowColor="@color/backgroundLoadScreen"
+                    android:textColorHighlight="@color/backgroundLoadScreen"
+                    android:hint="@string/email"
+                    android:textColor="@color/backgroundLoadScreen"
+                    android:minWidth="350dp"
+                    android:drawableLeft="@drawable/icon_user"
+                    android:drawableStart="@drawable/icon_user">
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+         </LinearLayout>
+
+
+
+         <RelativeLayout
+             android:id="@+id/relativeLayout2"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/relativeLayout1"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="30dp"
+             android:layout_marginRight="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                app:boxStrokeColor="@color/backgroundLoadScreen"
+                app:boxBackgroundColor="@color/backgroundLoadScreen"
+                android:outlineAmbientShadowColor="@color/backgroundLoadScreen"
+                android:outlineSpotShadowColor="@color/backgroundLoadScreen"
+                android:textColorHint="@color/backgroundLoadScreen"
+                app:helperTextTextColor="@color/backgroundLoadScreen"
+                app:hintTextColor="@color/backgroundLoadScreen"
+                app:counterTextColor="@color/backgroundLoadScreen"
+                app:errorTextColor="@color/backgroundLoadScreen"
+                app:counterOverflowTextColor="@color/backgroundLoadScreen">
+
+               <androidx.appcompat.widget.AppCompatEditText
+                   android:id="@+id/txtPassword"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:imeOptions="actionNext"
+                   android:singleLine="true"
+                   android:outlineSpotShadowColor="@color/backgroundLoadScreen"
+                   android:outlineAmbientShadowColor="@color/backgroundLoadScreen"
+                   android:textColorLink="@color/backgroundLoadScreen"
+                   android:textColorHint="@color/backgroundLoadScreen"
+                   android:shadowColor="@color/backgroundLoadScreen"
+                   android:textColorHighlight="@color/backgroundLoadScreen"
+                   android:hint="@string/palavra_passe"
+                   android:textColor="@color/backgroundLoadScreen"
+                   android:minWidth="350dp"
+                   android:drawableLeft="@drawable/img_password"
+                   android:drawableStart="@drawable/img_password">
+               </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/relativeLayout3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/relativeLayout2"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:text="Esqueceu-se da palavra-passe?"
+                android:textColor="@color/backgroundLoadScreen"
+                android:textColorLink="@color/backgroundLoadScreen"
+                android:textStyle="bold" />
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/relativeLayout4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/relativeLayout3"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="20dp">
+
+
+            <Button
+                android:id="@+id/btnEntrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="sans-serif-medium"
+                android:text="Entrar"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="65dp"
+                android:text="Não tem conta na ArtDecora?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="65dp"
+                android:onClick="registar"
+                android:text="Registe-se"
+                android:textColor="@color/backgroundLoadScreen"
+                android:textStyle="bold" />
+
+         </RelativeLayout>
+
+      </RelativeLayout>
+
+   </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.AppCompatTextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
